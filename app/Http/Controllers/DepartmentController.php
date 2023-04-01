@@ -39,7 +39,7 @@ public function department_update(){
      }
 
   public function department_delete(Request $request){
-// return $request;
+
     $department= Department::find($request->department_id);
       $department->delete();
    return redirect('/department-update');
